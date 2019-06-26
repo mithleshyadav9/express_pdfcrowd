@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+
+    <title>Document</title>
+    <style>
+        textarea {
+            resize: none;
+            min-height: 63px;
+            max-width: 701px;
+            margin: 15px auto;
+            overflow: hidden;
+        }
+    textarea,input[type='text'] {
+        background: none;
+        outline: none;
+        border:none;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    }
+    textarea,input[type='text']:focus,input[type='text']:hover{
+        outline: none;
+        border: none;
+    }
+    </style>
+</head>
+<body style="margin: 0;padding:0;box-sizing:border-box;">
+
+
+        <div id="certificate" class="__cont" style="display:inline-block;background: #FCFCFC url('https://firebasestorage.googleapis.com/v0/b/mithleshyadavcomnp.appspot.com/o/background2.png?alt=media&token=b6297521-4f37-433c-83f7-aa6cd6934db4') no-repeat;font-family: 'Arial';width: 842px;height: 595px;">  
+            <div class="__box" style="margin: 60px 100px 100px 80px;text-align: center;">
+                    <div class="__ublock" style="margin: 0 100px;">
+                    <div class="__heading">
+                        <input type="text" id="ctype002" style="font-weight: 600;
+                        text-transform: uppercase;
+                        font-size: 3rem;
+                        margin: 0 0 0 0;" value="certificate">
+                        <input type="text" value="of Achievement" id="cabout002" style="font-size: 20px;
+                        letter-spacing: 2px;
+                        margin: 5px 0 10px 0;
+                        text-transform: uppercase;">
+                    </div>
+                    <input type="text" value="Lorem Ipsum"  id="cname002" class="__cname" style="font-size: 22px;
+                    font-weight: 600;
+                    margin: 5px 0 5px 0; 
+                    font-family: 'Arial';">
+                    <div>
+                        <div class="__info" style="padding: 15px 0 20px 0;">
+                            <input type="text" value="This certificate is proudly presented to:" style="font-size: 18px;
+                            letter-spacing: 1.5px;
+                            color:#322f2f; ">
+                        </div>
+                        <input type="text" value="Name Surname" id="chname002" class="__name" style="padding: 5px 0;
+                        font-family: 'Great Vibes', cursive;
+                        font-size: 3rem;
+                        border-bottom: 1px solid #111;">
+                    </div>
+                    </div>
+                        <div id="chdesc002" class="__description">
+                            <textarea style="font-family: 'Arial';
+                            font-size: 1rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</textarea>
+                        </div>
+                        <div class="__bottom" style="align-self: center;
+                        display: flex;
+                        justify-content: center;">
+                            <div class="__date-box" style="display: flex;
+                            flex-direction: column;
+                            align-items: center;">
+                                <input type="text" value="20/08/19" id="cdate002" class="__item" style="font-size: 1.1rem;">
+                                <div class="__date" style="width: 200px;
+                                padding: 15px 0;
+                                font-size: 1.1rem;
+                                text-transform: uppercase;
+                                letter-spacing: 2px;
+                                border-top: 1px solid black;">Date</div>
+                            </div>
+                            <div id="ribbon" class="__ribbon" style="height: 100px;margin: 0 25px;">
+                                    <img class="__ribbon-svg" style="height: inherit;
+                                    width: inherit;" src="https://i.imgur.com/c2g0RVz.png" alt="ribbon">
+                            </div>
+                            <div class="__signature-box" style="display: flex;
+                            flex-direction: column;
+                            align-items: center;">
+                                <input type="text" value="Signature" id="csign002" class="__item" style="font-size: 1.1rem;">
+                                <div class="__signature" style="width: 200px;
+                                padding: 15px 0;
+                                font-size: 1.1rem;
+                                text-transform: uppercase;
+                                letter-spacing: 2px;
+                                border-top: 1px solid black;">Signature</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class='block' id='form-block'>
+                <h2>Edit the Certificate Content Directly.</h2>
+                
+                <form action='#' method='post'>
+                <p>
+                    <label for='id_remove_convert_button'>Remove convert buttons from PDF:</label>
+                    <input type='checkbox' name='remove_convert_button' id='id_remove_convert_button' {{ remove_buttons }}>
+                </p>
+                <center class='{{ pdfcrowd_remove }}'>
+                    <input type='submit' value='Convert to PDF' name='asAttachment'>
+                    <input type='submit' value='Convert to PDF and open' name='asInline'>
+                </center>
+            </form>
+            </div>
+    
+        
+
+    </body>
+</html>
